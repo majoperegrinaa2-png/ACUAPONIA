@@ -159,7 +159,7 @@
         </div>
     </section>
 
-    <!-- BANNER VERDE OSCURO + SECCIÓN ADOPTA UN PEZ -->
+    <!-- BANNER VERDE OSCURO + SECCIÓN ADOPTA UN PEZ (TAREA 5: VISTA PREVIA) -->
     <section id="adopta" class="seccion fondo-crema">
         <div class="contenedor">
             <!-- Tarjeta verde oscuro -->
@@ -187,7 +187,7 @@
                 </div>
             </div>
 
-            <!-- Formulario de interés -->
+            <!-- Formulario de interés con vista previa Tarea 5 -->
             <div id="formulario-adopcion" class="adopcion-grid">
                 <div class="adopcion-info">
                     <span class="etiqueta">ADOPTA UN PEZ</span>
@@ -201,29 +201,54 @@
                     </ul>
                 </div>
 
-                <form class="formulario-card" onsubmit="enviarSolicitud(event)">
-                    <h3>Formulario de interés</h3>
-                    <label>Nombre completo</label>
-                    <input type="text" placeholder="Escribe tu nombre completo" required>
+                <div class="formulario-card">
+                    <div class="banner-desarrollo">
+                        🚧 <strong>Función en desarrollo:</strong> Próximamente podrás crear tu cuenta con Supabase Auth para guardar y consultar el estado de tu adopción. (Por ahora esta es una vista previa y no almacena datos).
+                    </div>
 
-                    <label>Correo electrónico</label>
-                    <input type="email" placeholder="nombre@correo.edu.mx" required>
+                    <!-- Vista previa de inicio de sesión / estado -->
+                    <div class="vista-previa-cuenta">
+                        <h4>Vista previa: Portal del Adoptante</h4>
+                        <p>Cuando esta función esté activa, aquí podrás iniciar sesión con tu correo para ver tu solicitud:</p>
+                        <div class="estado-ejemplo">
+                            <span>👤 Usuario: <em>estudiante@correo.edu.mx</em></span>
+                            <span class="badge-estado">Estado: En revisión</span>
+                        </div>
+                    </div>
 
-                    <label>Nivel educativo</label>
-                    <select required>
-                        <option value="">Selecciona tu nivel educativo</option>
-                        <option value="Kínder">Kínder</option>
-                        <option value="Primaria">Primaria</option>
-                        <option value="Secundaria">Secundaria</option>
-                        <option value="Bachillerato">Bachillerato</option>
-                    </select>
+                    <hr class="separador-form">
 
-                    <label>Propósito de adopción</label>
-                    <textarea rows="3" placeholder="Cuéntanos por qué quieres adoptar un pez y cómo planeas cuidarlo" required></textarea>
+                    <form onsubmit="enviarSolicitud(event)">
+                        <h3>Formulario de interés (Vista previa)</h3>
+                        <label>Nombre completo *</label>
+                        <input type="text" placeholder="Escribe tu nombre completo" required>
 
-                    <button type="submit" class="btn-verde">Enviar Solicitud →</button>
-                    <p id="mensaje-exito" class="mensaje-oculto">✅ ¡Solicitud registrada! El equipo docente revisará tu interés.</p>
-                </form>
+                        <label>Correo electrónico *</label>
+                        <input type="email" placeholder="nombre@correo.edu.mx" required>
+
+                        <label>Nivel educativo *</label>
+                        <select required>
+                            <option value="">Selecciona tu nivel educativo</option>
+                            <option value="Kínder">Kínder</option>
+                            <option value="Primaria">Primaria</option>
+                            <option value="Secundaria">Secundaria</option>
+                            <option value="Bachillerato">Bachillerato</option>
+                        </select>
+
+                        <label>Especie de preferencia (Opcional)</label>
+                        <select>
+                            <option value="">Sin preferencia</option>
+                            <option value="Pez Cebra">Pez Cebra</option>
+                            <option value="Pez Guppy">Pez Guppy</option>
+                        </select>
+
+                        <label>Propósito de adopción *</label>
+                        <textarea rows="3" placeholder="Cuéntanos por qué quieres adoptar un pez y cómo planeas cuidarlo" required></textarea>
+
+                        <button type="submit" class="btn-verde">Simular envío (Vista previa) →</button>
+                        <p id="mensaje-exito" class="mensaje-oculto">ℹ️ Vista previa: En la siguiente etapa estos datos se guardarán en tu cuenta.</p>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -232,11 +257,11 @@
     <footer>
         <div class="contenedor">
             <p><strong>🌿 ACUAPONIA</strong> — Proyecto Escolar de Vida y Sustentabilidad</p>
-            <p>Desarrollado por: <strong>[Maria Jose Peregrina Acevedo]</strong> | Grupo: <strong>[Bachillerato 5to A]</strong> | Programación B5B</p>
+            <p>Desarrollado por: <strong>[Maria jose Peregrina Acevedo]</strong> | Grupo: <strong>[B5A]</strong> | Programación B5B</p>
         </div>
     </footer>
 
-    <!-- Pequeño script para que el formulario dé respuesta real al enviarlo -->
+    <!-- Script para simulación visual de vista previa -->
     <script>
         function enviarSolicitud(event) {
             event.preventDefault();
