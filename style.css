@@ -448,6 +448,63 @@ h2 {
     border-radius: 8px;
 }
 
+/* Estilos Tarea 5: Vista previa y función en desarrollo */
+.banner-desarrollo {
+    background-color: #fff6db;
+    border: 1px solid #e6c665;
+    color: #5c4709;
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+}
+
+.vista-previa-cuenta {
+    background-color: #EAF3F8;
+    border: 1px dashed #7ba7bc;
+    padding: 16px;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.vista-previa-cuenta h4 {
+    color: #173F35;
+    margin-bottom: 4px;
+    font-size: 0.95rem;
+}
+
+.vista-previa-cuenta p {
+    font-size: 0.83rem;
+    color: #3d5650;
+    margin-bottom: 10px;
+}
+
+.estado-ejemplo {
+    background: #ffffff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.82rem;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.badge-estado {
+    background-color: #d8ecf5;
+    color: #173F35;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+}
+
+.separador-form {
+    border: none;
+    border-top: 1px solid #e4e0d5;
+    margin: 18px 0;
+}
+
 /* Pie de página */
 footer {
     background-color: #112e27;
@@ -457,7 +514,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* DISEÑO RESPONSIVO (Para probar dos anchos de pantalla en tu video) */
+/* DISEÑO RESPONSIVO (Computadora y Celular) */
 @media (max-width: 768px) {
     .contenedor-nav,
     .hero-grid,
